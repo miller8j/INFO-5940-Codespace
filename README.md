@@ -85,8 +85,16 @@ You will receive an individual API Key for class assignments. To prevent acciden
    ```
 3. If you want to run the Streamlit app and set up the key at the same time, run both commands together:
    ```bash
-   API_KEY="your_actual_API_KEY" streamlit run your-file-name.py
+   OPENAI_API_KEY="sk-x-rBahwOr9bye98yjwPbLw" streamlit run chat_with_pdf.py
    ```
 
 ## Troubleshooting
 - The Jupyter extension should install automatically. If you still cannot select a Python kernel on Jupyter Notebook: Go to the left sidebar >> **Extensions** >> search for **Jupyter** >> reload window (or reinstall it).   
+
+# My Changes
+
+I modified the devcontainer.json file by putting my API key into the API_KEY and OPENAI_API_KEY fields.
+
+I needed to update pandas to version 2.3.3 in requirements.txt because for some reason the older version was producing some error when I tried to use streamlit's write_steam() function.
+
+To run the application, put your api key into the devcontainer.json fields for API_KEY and OPENAI_API_KEY (as I have not exposed my own key). Then write the bash command: "streamlit run chat_with_pdf.py". Then open one of the links that appear in the terminal, and upload your relevant context documents to chat with the bot.
