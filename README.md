@@ -85,7 +85,7 @@ You will receive an individual API Key for class assignments. To prevent acciden
    ```
 3. If you want to run the Streamlit app and set up the key at the same time, run both commands together:
    ```bash
-   OPENAI_API_KEY="sk-x-rBahwOr9bye98yjwPbLw" streamlit run chat_with_pdf.py
+   OPENAI_API_KEY="your_api_key" streamlit run chat_with_pdf.py
    ```
 
 ## Troubleshooting
